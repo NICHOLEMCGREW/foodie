@@ -12,6 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors())
 app.use(helmet());
 
+app.get('/ping', (req: Request, res: Response) => {
+    res.send("pong");
+});
+
 app.all('*', (req: Request, res: Response) => {
     res.status(404).json({message: 'The route you requested is not found'})
 })
