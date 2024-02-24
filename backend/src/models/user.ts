@@ -24,3 +24,6 @@ const userSchema = new Schema<IUser>(
         toObject: { virtuals: true },
     }
 );
+
+export const User =
+(models.User as Model<IUser>) || model<IUser>("User", userSchema);
