@@ -4,6 +4,7 @@ import express, {Request, Response, Application} from 'express'
 import cors from 'cors'
 import helmet from 'helmet';
 import {connect} from 'mongoose'
+import { authRouter, recipeRouter } from './routes';
 
 const app: Application = express();
 
@@ -11,6 +12,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors())
 app.use(helmet());
+
+app.use('/auth', authRouter);
+app.use('/recipe', recipeRouter);
 
 app.get('/ping', (req: Request, res: Response) => {
     res.send("pong");
