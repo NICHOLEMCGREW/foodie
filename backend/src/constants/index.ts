@@ -1,2 +1,3 @@
-import { CONSTANTS } from "./constants"
-export{ CONSTANTS }
+import { CONSTANTS } from "./constants";
+
+export { CONSTANTS };

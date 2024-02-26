@@ -6,14 +6,14 @@ import {
   getUserRecipes,
   createRecipe,
   searchRecipe,
-} from "./../";
+} from "./../controllers";
 import { validate } from "../middleware";
 import {
   createRecipeSchema,
   getRecipeSchema,
   getUserRecipesSchema,
   searchRecipeSchema,
-} from "../schema-validation";
+} from "../schema-validations";
 
 const router = express.Router();
 

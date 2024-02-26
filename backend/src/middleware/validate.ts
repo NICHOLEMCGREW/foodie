@@ -1,12 +1,11 @@
 import { NextFunction, Request, Response } from "express";
-
 import { InferType } from "yup";
 import {
   createRecipeSchema,
   getRecipeSchema,
   getUserRecipesSchema,
   joinSchema,
-} from "../schema-validation";
+} from "../schema-validations";
 
 //middleware to validate req data
 export const validate =

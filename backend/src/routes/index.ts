@@ -1,4 +1,3 @@
-import { router as authRouter} from "./auth";
-import{router as recipeRouter } from './recipe';
-
-export { authRouter, recipeRouter };
+import { router as recipeRouter } from "./recipes";
+import { router as authRouter } from "./auth";
+export { recipeRouter, authRouter };

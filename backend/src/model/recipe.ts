@@ -33,7 +33,7 @@ const recipeSchema = new Schema<IRecipe>(
     autoIndex: true,
     toJSON: { virtuals: true },
     toObject: { virtuals: true },
-  },
+  }
 );
 
 // 3. Create a Model.
