@@ -6,7 +6,7 @@ import {
   getRecipeSchema,
   getUserRecipesSchema,
   joinSchema,
-} from "../schema-validations";
+} from "../schema-validation";
 
 //middleware to validate req data
 export const validate =
